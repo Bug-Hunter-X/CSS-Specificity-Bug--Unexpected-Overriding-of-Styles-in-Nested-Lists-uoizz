@@ -1,0 +1,18 @@
+The following CSS code snippet demonstrates an uncommon error related to the specificity of CSS selectors.  The intention is to style all list items within a navigation bar, but due to incorrect nesting and specificity, the expected styles are not applied.
+
+```css
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li {
+  background-color: #f0f0f0;
+}
+```
+
+The `nav ul li` selector has higher specificity than `nav li`, unintentionally overriding the `display: inline-block` style. This is less common because the selectors are usually more complex, involving classes or IDs.
