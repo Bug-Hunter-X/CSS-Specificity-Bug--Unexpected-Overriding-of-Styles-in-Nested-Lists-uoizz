@@ -1,0 +1,17 @@
+To resolve this issue, we must ensure that the desired styles are applied with the correct specificity.  We can achieve this by adjusting the order or specificity of selectors.
+
+One solution is to use more specific selectors or to increase the specificity of the selectors that need to be applied.
+
+```css
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f0f0f0; /* Apply background color here */
+}
+```
+
+By applying the background color directly to `nav li`, we ensure it is applied regardless of any nested selectors with higher specificity.  Alternatively, we could use a class to target elements for enhanced control and avoid these specificity issues.
