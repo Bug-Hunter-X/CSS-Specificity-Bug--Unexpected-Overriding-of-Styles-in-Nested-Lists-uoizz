@@ -1,0 +1,1 @@
+This repository demonstrates a subtle CSS specificity issue. The bug.css file contains code that intends to style list items within a navigation bar. However, due to an unexpected interaction between the selectors, the list items display incorrectly. The bugSolution.css file demonstrates the correct way to structure the CSS to achieve the intended styling.
